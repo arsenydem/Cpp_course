@@ -11,15 +11,12 @@ private:
     std::int64_t size = 0; 
     std::int64_t capacity; 
     
-    bool isEmpty() {
-    return size == -1;
-  }
 
 public:
     DynamicArray();
     DynamicArray(std::int64_t capacity); // parametrized ctor
     DynamicArray(const DynamicArray<T>& other);
-    ~DynamicArray() // destructor
+    ~DynamicArray(); // destructor
 
     void push_back(T x);
     void remove(std::int64_t idx);
@@ -33,6 +30,5 @@ public:
 
 
 #include "DynamicArray.cc"
-
 
 #endif // DYN_ARR_H

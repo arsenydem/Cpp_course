@@ -40,7 +40,7 @@ T Stack<T>::pop() {
 }
 
 template <typename T>
-T Stack<T>::isEmpty() {
+bool Stack<T>::isEmpty() {  
     return arr.isEmpty();
 }
 
