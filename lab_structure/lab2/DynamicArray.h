@@ -26,9 +26,10 @@ public:
     bool isEmpty() const;
 
     T& operator[](std::int64_t idx);
-}
+};
 
 
 #include "DynamicArray.cc"
+
 
 #endif // DYN_ARR_H
